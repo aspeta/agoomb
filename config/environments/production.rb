@@ -28,9 +28,9 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 # Added for devise
-config.action_mailer.default_url_options = { :host => "localhost:3000" }
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.perform_deliveries = true
+config.action_mailer.default_url_options = { host: 'aspet-agoomb.herokuapp.com' }
+# config.action_mailer.delivery_method = :smtp
+# config.action_mailer.perform_deliveries = true
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -46,7 +46,7 @@ config.action_mailer.perform_deliveries = true
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+   config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
