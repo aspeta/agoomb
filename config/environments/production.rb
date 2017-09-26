@@ -27,7 +27,10 @@ Rails.application.configure do
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
-
+# Added for devise
+config.action_mailer.default_url_options = { :host => 'aspet-agoomb.herokuapp.com' }
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
