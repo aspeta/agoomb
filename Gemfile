@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.7.1'
 # Use sqlite3 as the database for Active Record in development and pg for heroku
 group :production do
-   gem 'pg'
+   gem 'pg', '~> 0.18'
    gem 'rails_12factor'
  end
  
