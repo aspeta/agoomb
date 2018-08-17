@@ -3,7 +3,7 @@
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
 <head>
-  <title>Agoomb</title>
+  <title>Help2Give</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -13,9 +13,13 @@
   <div class="container">
    <ul class="nav nav-tabs">
         <li><%= link_to "Home", welcome_index_path %></li>
-        <li><%= link_to "About", welcome_about_path %></li>
-        <li><%= link_to "Donate", welcome_Donate_path %></li>
+        <li><%= link_to "Dashboard", welcome_Dashboard_path %></li>
+        <li><%= link_to "Goals", welcome_Goals_path %></li>
+        <li><%= link_to "Social", welcome_Social_path %></li>
+        <li><%= link_to "More", welcome_More_path %></li>
+        
         <li><%= link_to "Contact us", welcome_ContactUs_path %></li>
+          <li><%= link_to "About", welcome_about_path %></li>
         
          <div class="pull-right user-info">
            <% if current_user %>

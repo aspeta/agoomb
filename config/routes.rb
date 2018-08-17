@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
    get 'welcome/index'
-
+   get 'welcome/Dashboard'
+   get 'welcome/Goals'
+   get 'welcome/Social'
+   get 'welcome/More'
    get 'welcome/about'
    get 'welcome/ContactUs'
    get 'welcome/Donate'
