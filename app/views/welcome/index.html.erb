@@ -1,39 +1,36 @@
 
 <br>
- <p id="index-title">This is the home page for Help2give.com</p>
+ <p id="index-title"></p>
 <div class="jumbotron">
-  <h1>Help2Give.com</h1>
-  <p>Help2Give.com is your source for your Philanthropy. </p>
-  <p>
+
       <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
       <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
   </p>
 </div>
-
+<% if current_user %>
 <div class="row">
   <div class="col-md-4">
     <h2>Dashboards</h2>
-    <div class="posts"><p>Help2Give.com Your Dashboard</p></div>
+    <div class="posts"><p>Test</p></div>
   </div>
   <div class="col-md-4">
     <h2>Your Goals</h2>
     
-    <div class="posts"><p>This is where I can set my Philanthropy goals</p></div>
+    <div class="posts"><p>1</p></div>
   </div>
   <div class="col-md-4">
     <h2>Your Page</h2>
-    <div class="posts"><p>Help2Give.com, Your page</p></div>
+    <div class="posts"><p>Your</p></div>
    
   </div>
   <div class="col-md-4">
     <h2>Non Profits</h2>
     
-    <div class="posts"><p>This is where I can search non-profits by category and geographic area</p></div>
+    <div class="posts"><p>NP area</p></div>
   </div>
-  
+<%else%>
+<%end%>
 </div>
 
- 
+ <section> Footer </section>
 
-
- <section>This section should contain, footer information</section>
