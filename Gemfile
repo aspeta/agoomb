@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.4.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.8'
+gem 'rails', '4.2.7.1'
 # Use sqlite3 as the database for Active Record in development and pg for heroku
 group :production do
    gem 'pg', '~> 0.18'
